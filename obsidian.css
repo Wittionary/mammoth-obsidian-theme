@@ -6,6 +6,8 @@ https://coolors.co/0ad1ed-dd99bb-bfffbc-647d90-544261-f5b700
 "Slate Gray":"647d90", 100, 125, 144
 "English Violet":"544261", 84, 66, 97
 "Orange Yellow":"f5b700"} 245, 183, 0
+Dark palette:
+https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 */
 
 /* ------------------------------------ TODOIST ------------------------------------ */
@@ -136,6 +138,12 @@ https://coolors.co/0ad1ed-dd99bb-bfffbc-647d90-544261-f5b700
 /* ------------------------------------ DARK THEME ------------------------------------ */
 .theme-dark {
   /* Start custom colors */
+  --sky-blue-crayola: #0ad1ed;
+  --kobi: #dd99bb;
+  --kobi-dark: #DC3B8C;
+  --granny-smith-apple: #bfffbc;
+  --slate-gray: #647d90;
+  --english-violet: #544261;
   --orange-yellow: #f5b700;
   /* End custom colors */
   --background-primary: #171b1f;
@@ -226,5 +234,12 @@ https://coolors.co/0ad1ed-dd99bb-bfffbc-647d90-544261-f5b700
 /* ------------------------------------ Makes quickswitcher selection bright ------------------------------------ */
 .suggestion-item.is-selected {
   background-color: var(--orange-yellow);
-  color: var(--text-faint);
+  color: var(--background-primary);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* ------------------------------------ Makes background of close button pink on hover ------------------------------------ */
+.titlebar-button.mod-close:hover {
+  background-color: #DC3B8C;
 }
