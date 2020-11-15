@@ -236,10 +236,22 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   background-color: var(--orange-yellow);
   color: var(--background-primary);
   border-radius: 4px;
-  font-weight: bold;
+  
 }
 
 /* ------------------------------------ Makes background of close button pink on hover ------------------------------------ */
 .titlebar-button.mod-close:hover {
   background-color: #DC3B8C;
+}
+
+/* ------------------------------------ Changes color of line break ------------------------------------ */
+.markdown-preview-view hr {
+  border-color: var(--slate-gray);
+}
+
+/* ------------------------------------ Blockquote ------------------------------------ */
+.markdown-preview-view blockquote {
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid var(--slate-gray);
+  border-left-width: 3px;
 }
