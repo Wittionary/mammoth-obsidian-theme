@@ -19,12 +19,11 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   display: inline;
   float: right;
   margin-left: 8px;
-  padding: 3px 10px;
-  background-color: lightgray;
-
-  &:hover {
-    background-color: darkgray;
-  }
+  padding: 2px 3px;
+  background-color: var(--slate-gray);
+}
+.todoist-refresh-button:hover {
+  background-color: #728fa5;
 }
 
 .todoist-refresh-spin {
@@ -33,51 +32,58 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 
 @-webkit-keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
   }
 }
+.markdown-preview-view ul > li.task-list-item input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  border: 1px solid var(--granny-smith-apple) !important;
+  background-color: var(--english-violet) !important;
+  padding: 0;
+  filter: none;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 6px;
+  line-height: 0;
+  margin-right: 5px;
+  margin-left: -6px;
+}
 
-.markdown-preview-view ul > li.task-list-item {
-  .todoist-p1 > input[type="checkbox"] {
-    border: 1px solid red !important;
-    background-color: rgba(red, 0.25) !important;
-
-    &:hover {
-      background-color: rgba(red, 0.5) !important;
-    }
-  }
-
-  .todoist-p2 > input[type="checkbox"] {
-    border: 1px solid yellow !important;
-    background-color: rgba(yellow, 0.25) !important;
-
-    &:hover {
-      background-color: rgba(yellow, 0.5) !important;
-    }
-  }
-
-  .todoist-p3 > input[type="checkbox"] {
-    border: 1px solid lightblue !important;
-    background-color: rgba(lightblue, 0.25) !important;
-
-    &:hover {
-      background-color: rgba(lightblue, 0.5) !important;
-    }
-  }
-
-  .todoist-p4 > input[type="checkbox"] {
-    border: 1px solid gray !important;
-    background-color: rgba(gray, 0.25) !important;
-
-    &:hover {
-      background-color: rgba(    background-color: rgba(gray, 0.25) !important;, 0.5) !important;
-    }
-  }
+.markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type=checkbox] {
+  border: 2px solid var(--todoist-red) !important;
+  background-color: var(--todoist-red-background) !important;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type=checkbox]:hover {
+  background-color: rgba(255, 117, 127, 0.5) !important;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type=checkbox] {
+  border: 2px solid var(--todoist-orange) !important;
+  background-color: var(--todoist-orange-background) !important;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type=checkbox]:hover {
+  background-color: rgba(255, 199, 119, 0.5) !important;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type=checkbox] {
+  border: 2px solid var(--todoist-blue) !important;
+  background-color: var(--todoist-blue-background) !important;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type=checkbox]:hover {
+  background-color: rgba(101, 188, 255, 0.5) !important;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type=checkbox] {
+  border: 2px solid var(--slate-gray) !important;
+  background-color: rgba(180, 194, 240, 0.25) !important;
+}
+.markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type=checkbox]:hover {
+  background-color: rgba(180, 194, 240, 0.5) !important;
 }
 
 .task-metadata {
   font-size: small;
-  color: gray;
+  color: var(--orange-yellow);
   margin-left: 20px;
 }
 
@@ -86,7 +92,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 }
 
 .task-date.task-overdue {
-  color: rgba(pink, 0.75);
+  color: rgba(221, 153, 187, 0.75);
 }
 
 .task-calendar-icon,
@@ -112,27 +118,25 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 
 .todoist-section .todoist-section-title {
   font-size: 11pt;
-  color: whitesmoke;
+  color: var(--sky-blue-crayola);
   font-weight: 700;
   margin-block-end: 0px;
 }
 
 .todoist-error {
-  border: 1px solid pink;
-  background-color: rgba(pink, 0.05);
+  border: 1px solid var(--kobi);
+  background-color: rgba(255, 152, 164, 0.05);
   padding: 1em 1em;
   margin: 1em 0px;
-
-  p {
-    margin: 0 0 1em 0;
-    font-weight: 600;
-  }
-
-  code {
-    background-color: unset !important;
-    padding: unset !important;
-    margin: unset !important;
-  }
+}
+.todoist-error p {
+  margin: 0 0 1em 0;
+  font-weight: 600;
+}
+.todoist-error code {
+  background-color: unset !important;
+  padding: unset !important;
+  margin: unset !important;
 }
 
 /* ------------------------------------ DARK THEME ------------------------------------ */
@@ -146,6 +150,15 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   --english-violet: #544261;
   --orange-yellow: #f5b700;
   /* End custom colors */
+  /* Start custom TODOIST colors */
+  --todoist-red: #ff7066;
+  --todoist-red-background: rgba(255,112,102,.1);
+  --todoist-blue: #5297ff;
+  --todoist-blue-background: rgba(82,151,255,.1);
+  --todoist-orange: #ff9a14;
+  --todoist-orange-background: rgba(255,154,20,.1);
+  --todoist-green: #25b84c;
+  /* End custom TODOIST colors */
   --background-primary: #171b1f;
   --background-primary-alt: #20252a;
   --background-secondary: #171e24;
@@ -154,8 +167,8 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #bfffbc;
-  --background-modifier-error: #dd99bb;
+  --background-modifier-success: var(--granny-smith-apple);
+  --background-modifier-error: var( --kobi);
   --background-modifier-error-rgb: 221, 153, 187;
   --background-modifier-error-hover: #f1a6cc;
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
@@ -165,7 +178,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   --text-muted: #999;
   --text-muted-rgb: 153, 153, 153;
   --text-faint: #666;
-  --text-error: #dd99bb;
+  --text-error: var( --kobi);
   --text-error-hover: #c55d91;
   --text-highlight-bg: rgba(245, 184, 0, 0.397);
   --text-highlight-bg-active: rgba(243, 195, 49, 0.459);
@@ -173,7 +186,7 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   --text-on-accent: #dcddde;
   --interactive-normal: #2a2a2a;
   --interactive-hover: #303030;
-  --interactive-accent: #0ad1ed;
+  --interactive-accent: var(--sky-blue-crayola);
   --interactive-accent-rgb: 10, 209, 237;
   --interactive-accent-hover: #64d9e9;
   --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
@@ -184,6 +197,24 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 
 /* ------------------------------------ LIGHT THEME ------------------------------------ */
 .theme-light {
+    /* Start custom colors */
+  --sky-blue-crayola: #0ad1ed;
+  --kobi: #dd99bb;
+  --kobi-dark: #DC3B8C;
+  --granny-smith-apple: #bfffbc;
+  --slate-gray: #647d90;
+  --english-violet: #544261;
+  --orange-yellow: #f5b700;
+  /* End custom colors */
+  /* Start custom TODOIST colors */
+  --todoist-red: #ff7066;
+  --todoist-red-background: rgba(255,112,102,.1);
+  --todoist-blue: #5297ff;
+  --todoist-blue-background: rgba(82,151,255,.1);
+  --todoist-orange: #ff9a14;
+  --todoist-orange-background: rgba(255,154,20,.1);
+  --todoist-green: #25b84c;
+  /* End custom TODOIST colors */
   --background-primary: #ffffff;
   --background-primary-alt: #f5f6f8;
   --background-secondary: #f2f3f5;
