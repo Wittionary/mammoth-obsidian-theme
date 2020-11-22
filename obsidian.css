@@ -11,6 +11,10 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
 */
 
 /* ------------------------------------ TODOIST ------------------------------------ */
+.contains-task-list {
+  margin-top: 5px;
+}
+
 .todoist-query-title {
   display: inline !important;
 }
@@ -41,7 +45,9 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   border-radius: 50%;
   border: 1px solid var(--granny-smith-apple) !important;
   background-color: var(--english-violet) !important;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
   filter: none;
   width: 18px;
   height: 18px;
@@ -85,10 +91,12 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   font-size: small;
   color: var(--orange-yellow);
   margin-left: 20px;
+  padding-bottom: 5px;
 }
 
 .task-metadata > * {
   margin-right: 30px;
+  float: none;
 }
 
 .task-date.task-overdue {
