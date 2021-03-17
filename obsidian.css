@@ -39,52 +39,42 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
     -webkit-transform: rotate(-360deg);
   }
 }
-.markdown-preview-view ul > li.task-list-item input[type=checkbox] {
-  appearance: none;
-  -webkit-appearance: none;
-  border-radius: 50%;
-  border: 1px solid var(--granny-smith-apple) !important;
-  background-color: var(--english-violet) !important;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 5px;
-  filter: none;
-  width: 18px;
-  height: 18px;
-  position: relative;
-  top: 6px;
-  line-height: 0;
-  margin-right: 5px;
-  margin-left: -6px;
-}
 
 .markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type=checkbox] {
   border: 2px solid var(--todoist-red) !important;
   background-color: var(--todoist-red-background) !important;
+  border-radius: 50%;
 }
 .markdown-preview-view ul > li.task-list-item .todoist-p1 > input[type=checkbox]:hover {
   background-color: rgba(255, 117, 127, 0.5) !important;
+  border-radius: 50%;
 }
 .markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type=checkbox] {
   border: 2px solid var(--todoist-orange) !important;
   background-color: var(--todoist-orange-background) !important;
+  border-radius: 50%;
 }
 .markdown-preview-view ul > li.task-list-item .todoist-p2 > input[type=checkbox]:hover {
   background-color: rgba(255, 199, 119, 0.5) !important;
+  border-radius: 50%;
 }
 .markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type=checkbox] {
   border: 2px solid var(--todoist-blue) !important;
   background-color: var(--todoist-blue-background) !important;
+  border-radius: 50%;
 }
 .markdown-preview-view ul > li.task-list-item .todoist-p3 > input[type=checkbox]:hover {
   background-color: rgba(101, 188, 255, 0.5) !important;
+  border-radius: 50%;
 }
 .markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type=checkbox] {
   border: 2px solid var(--slate-gray) !important;
   background-color: rgba(180, 194, 240, 0.25) !important;
+  border-radius: 50%;
 }
 .markdown-preview-view ul > li.task-list-item .todoist-p4 > input[type=checkbox]:hover {
   background-color: rgba(180, 194, 240, 0.5) !important;
+  border-radius: 50%;
 }
 
 .task-metadata {
@@ -145,6 +135,40 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   background-color: unset !important;
   padding: unset !important;
   margin: unset !important;
+}
+
+/* ------------------------------------ STANDARD CHECKBOXES ------------------------------------ */
+.markdown-preview-view ul > li.task-list-item input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid var(--text-normal) !important;
+  background-color: var(--kobi) !important;
+  border-radius: 10%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
+  filter: none;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 6px;
+  line-height: 0;
+  margin-right: 5px;
+  margin-left: -6px;
+}
+.markdown-preview-view ul > li.task-list-item input[type=checkbox]:hover {
+  border: 2px solid var(--text-normal) !important;
+  background-color: var(--orange-yellow) !important;
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked input[type=checkbox] {
+  border: 2px solid var(--orange-yellow) !important;
+  background-color: var(--granny-smith-apple) !important;
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: line-through;
+  color: var(--granny-smith-apple);
 }
 
 /* ------------------------------------ DARK THEME ------------------------------------ */
@@ -293,4 +317,37 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   border-radius: 4px 4px 4px 4px;
   border: 1px solid var(--slate-gray);
   border-left-width: 3px;
+}
+
+/* ------------------------------------ Headers ------------------------------------ */
+.markdown-preview-view h1 {
+  font-size: 34px;
+  line-height: 40px;
+}
+.markdown-preview-view h2 {
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--granny-smith-apple);
+  margin-left: 10px;
+}
+.markdown-preview-view h3 {
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--orange-yellow);
+  margin-left: 20px;
+}
+.markdown-preview-view h4 {
+  font-size: 20px;
+  color: var(--kobi);
+  margin-left: 30px;
+}
+.markdown-preview-view h5 {
+  font-size: 18px;
+  color: var(--slate-gray);
+  margin-left: 40px;
+}
+.markdown-preview-view h6 {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-left: 50px;
 }
