@@ -17,11 +17,11 @@ Mammoth is a dark theme for the note-taking app [Obsidian](https://obsidian.md).
 - [Headers](#Headers)
 - [Codeblocks](#Codeblocks)
 
-## <a name="Blockquotes"></a> Blockquotes
+## <a name="Blockquotes"></a>Blockquotes
 _TODO: embed pic_
 
-## <a name="Headers"></a> Headers
+## <a name="Headers"></a>Headers
 _TODO: embed pic_
 
-## <a name="Codeblocks"></a> Codeblocks
+## <a name="Codeblocks"></a>Codeblocks
 _TODO: embed pic_
