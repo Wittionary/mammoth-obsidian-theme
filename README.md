@@ -1,4 +1,4 @@
-# mammoth-obsidian-theme
+# mammoth
 ![🦣](./mammoth.png)
 
 I really don't want to make this theme. I just want things to look nice. But, ya know, my _specific_ type of nice.
