@@ -351,3 +351,22 @@ https://coolors.co/059fb3-dc3b8c-57ff4e-2d628b-421e5c-b88a00
   color: var(--text-muted);
   margin-left: 50px;
 }
+
+/* ------------------------------------ Highlights ------------------------------------ */
+.markdown-preview-view mark {
+  background-color: var(--kobi);
+  color: var(--background-primary);
+  font-weight: 600;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-normal);
+}
+.cm-s-obsidian span.cm-highlight.obsidian-search-match-highlight {
+  background-color: var(--text-selection);
+}
