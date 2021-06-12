@@ -11,17 +11,23 @@ Mammoth is a dark theme for the note-taking app [Obsidian](https://obsidian.md).
 
 ❌ Is an extinct mammal :(
 
+## Overview
+![Fullscreen](./screenshots/fullscreen-formatting-examples.png)
 
 ## Examples
+- [Todoist](#Todoist)
 - [Blockquotes](#Blockquotes)
 - [Headers](#Headers)
 - [Codeblocks](#Codeblocks)
 
-## <a name="Blockquotes"></a>Blockquotes
-_TODO: embed pic_
-
 ## <a name="Headers"></a>Headers
-_TODO: embed pic_
+![Headers](./screenshots/headers.png)
+
+## <a name="Todoist"></a>Todoist
+![Todoist](./screenshots/todoist.png)
+
+## <a name="Blockquotes"></a>Blockquotes
+![Blockquotes](./screenshots/blockquotes.png)
 
 ## <a name="Codeblocks"></a>Codeblocks
-_TODO: embed pic_
+![Codeblocks](./screenshots/code-blocks.png)
